@@ -3,8 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>我的按鈕示範</title>
-
   <style>
+    /* 1. 基本排版 ------------------------------- */
+    body{
+      margin:0;                       /* 取消預設空白 */
+      display:flex;
+      flex-direction:column;          /* 讓 header 在最上、main 在下 */
+      align-items:center;             /* 整頁左右置中 */
+      font-family:sans-serif;
+    }
+    .container{
+      width:100%;
+      max-width:960px;                /* 視需要調整內容欄最大寬 */
+      padding:0 20px;
+      box-sizing:border-box;
+    }
+
+    /* 2. 橫幅圖片 ------------------------------- */
+    header img{
+      width:100%;                     /* 滿版橫幅 */
+      height:auto;                    /* 等比縮放 */
+      display:block;                  /* 移除底部空隙 */
+    }
+
+    /* 3. 主要內容 ------------------------------- */
+    h1{color:#333;text-align:center;margin-top:32px;}
+
+    /* 4. 按鈕樣式 ------------------------------- */
     .btn-link{
       display:inline-block;
       padding:12px 24px;
@@ -13,22 +38,30 @@
       border-radius:6px;
       text-decoration:none;
       font-size:18px;
+      transition:.2s;
     }
     .btn-link:hover{background:#147ad6;}
   </style>
 </head>
 
 <body>
-  <h1>👋 你好！</h1>
+  <!-- 橫幅區：把 banner.jpg 換成自己的圖檔路徑 -->
+  <header class="container">
+    <img src=""C:\Users\iamun\Downloads\下載.jpg"" alt="網站橫幅圖片">
+  </header>
 
-  <!-- 新分頁開啟，可視需要拿掉 target="_blank" -->
-  <p>
-    <a href="https://www.youtube.com"
-       class="btn-link"
-       target="_blank"
-       rel="noopener">
-       前往 YouTube
-    </a>
-  </p>
+  <!-- 主內容區 -->
+  <main class="container">
+    <h1>👋 你好！</h1>
+
+    <p>
+      <a href="https://www.youtube.com" 
+         class="btn-link" 
+         target="_blank" 
+         rel="noopener">
+         前往 YouTube
+      </a>
+    </p>
+  </main>
 </body>
 </html>
