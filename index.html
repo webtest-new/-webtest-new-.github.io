@@ -1,21 +1,34 @@
-<!-- 加在 <head> 或既有 <style> 內 -->
-<style>
-  .btn-link{
-    display:inline-block;
-    padding:12px 24px;
-    background:#1e90ff;
-    color:#fff;
-    border-radius:6px;
-    text-decoration:none;
-    font-size:18px;
-  }
-  .btn-link:hover{background:#147ad6;}
-</style>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>我的按鈕示範</title>
 
-<!-- 加在 <body> 裡想要顯示的位置 -->
-<p>
-  <a href="https://www.youtube.com/"              <!-- ← 換成你要跳轉的網址 -->
-     class="btn-link"
-     target="_blank"                     <!-- 新分頁開啟，可視需要拿掉 -->
-     rel="noopener">前往新網站</a>
-</p>
+  <style>
+    .btn-link{
+      display:inline-block;
+      padding:12px 24px;
+      background:#1e90ff;
+      color:#fff;
+      border-radius:6px;
+      text-decoration:none;
+      font-size:18px;
+    }
+    .btn-link:hover{background:#147ad6;}
+  </style>
+</head>
+
+<body>
+  <h1>👋 你好！</h1>
+
+  <!-- 新分頁開啟，可視需要拿掉 target="_blank" -->
+  <p>
+    <a href="https://www.youtube.com"
+       class="btn-link"
+       target="_blank"
+       rel="noopener">
+       前往 YouTube
+    </a>
+  </p>
+</body>
+</html>
