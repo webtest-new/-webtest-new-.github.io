@@ -1,15 +1,21 @@
-<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-  <meta charset="UTF-8">
-  <title>Hello GitHub Pages</title>
-  <style>
-    body{font-family:sans-serif;text-align:center;margin-top:15%}
-    h1{color:#1e90ff}
-  </style>
-</head>
-<body>
-  <h1>👋 你好！GitHub Pages 已啟用</h1>
-  <p>這個頁面是用「Create new file」直接線上建立的。</p>
-</body>
-</html>
+<!-- 加在 <head> 或既有 <style> 內 -->
+<style>
+  .btn-link{
+    display:inline-block;
+    padding:12px 24px;
+    background:#1e90ff;
+    color:#fff;
+    border-radius:6px;
+    text-decoration:none;
+    font-size:18px;
+  }
+  .btn-link:hover{background:#147ad6;}
+</style>
+
+<!-- 加在 <body> 裡想要顯示的位置 -->
+<p>
+  <a href="YOUR_TARGET_URL"              <!-- ← 換成你要跳轉的網址 -->
+     class="btn-link"
+     target="_blank"                     <!-- 新分頁開啟，可視需要拿掉 -->
+     rel="noopener">前往新網站</a>
+</p>
